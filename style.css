@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+body {
+  background-color: #ff8364;
+  font-family: "Roboto", sans-serif;
+  color: #edf7fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #5f6caf;
+  padding: 20px;
+  border-bottom: 1px solid #d3d3d3;
+}
+header > h1 {
+  color: #edf7fa;
+  text-align: center;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 50px;
+}
+
+.choice {
+  margin: 50px 0;
+  transition: all 0.3s ease;
+}
+.choice .rock {
+  height: 150px;
+  width: 150px;
+}
+
+.choice .paper {
+  height: 225px;
+  width: 225px;
+}
+
+.choice .scissors {
+  height: 225px;
+  width: 200px;
+}
+
+.choice:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+#message {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.score-board {
+  border: solid 2px #edf7fa;
+  width: 200px;
+  color: #edf7fa;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 50px auto;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  position: relative;
+}
+
+.badge {
+  background: #ffb677;
+  color: #edf7fa;
+  font-size: 1.2rem;
+  padding: 2px 15px;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -35px;
+  border-radius: 4px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -40px;
+  border-radius: 4px;
+}
+
+.result > p {
+  font-size: 2.1rem;
+  text-align: center;
+  font-weight: 700;
+}
