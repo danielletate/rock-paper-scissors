@@ -99,4 +99,31 @@ header > h1 {
   font-size: 2.1rem;
   text-align: center;
   font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+div > .btn {
+  display: inline-block;
+  padding: 0.5rem 0.8rem;
+  width: 140px;
+  border: 2px solid #edf7fa;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2rem;
+  cursor: pointer;
+  background: #ff8364;
+  text-decoration: none;
+  color: #edf7fa;
+  font-size: 0.8rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+div > .btn:hover {
+  color: #ff8364;
+  background-color: #edf7fa;
 }

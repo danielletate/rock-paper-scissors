@@ -49,6 +49,14 @@ function draw(userChoice, computerChoice) {
   result_p.innerHTML = `It's a draw!!!`;
 }
 
+function startOver() {
+  let button = document.querySelector(".btn");
+  button.addEventListener("click", function () {
+    userScore_span.innerHTML = 0;
+    computerScore_span.innerHTML = 0;
+  });
+}
+
 function game(userChoice) {
   const computerChoice = getComputerChoice();
   switch (userChoice + computerChoice) {
